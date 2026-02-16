@@ -1,0 +1,58 @@
+/* assets/css/team.css */
+
+.section-title{
+  color:#2c3e50;
+  border-bottom:2px solid #3498db;
+  padding-bottom:5px;
+  margin:40px 0 30px;
+}
+
+.team-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap:30px;
+}
+
+.team-member{
+  text-align:center;
+  padding:20px;
+  background:#f8f9fa;
+  border-radius:10px;
+  transition:transform 0.3s ease;
+}
+
+.team-member:hover{
+  transform:translateY(-5px);
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.team-member .member-photo img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+}
+
+.member-role{
+  color:#7f8c8d;
+  font-size:0.9em;
+  margin:5px 0;
+}
+
+.member-research{
+  color:#34495e;
+  font-size:0.9em;
+  margin:10px 0;
+}
+
+.member-links{
+  margin-top:10px;
+}
+
+.small-link{
+  display:inline-block;
+  margin:0 5px;
+  color:#3498db;
+  font-size:1.2em;
+}

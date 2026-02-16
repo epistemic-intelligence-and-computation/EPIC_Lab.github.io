@@ -1,0 +1,20 @@
+<!-- _includes/authors.html -->
+{% assign authors = include.authors | default: empty %}
+{% assign hi = include.highlight | default: empty %}
+
+{% for a in authors %}
+  {% assign is_hi = false %}
+  {% for h in hi %}
+    {% if h == a %}
+      {% assign is_hi = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if is_hi %}
+    <ins>{{ a }}</ins>
+  {% else %}
+    {{ a }}
+  {% endif %}
+
+  {% unless forloop.last %}, {% endunless %}
+{% endfor %}

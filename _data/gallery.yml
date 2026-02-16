@@ -1,0 +1,17 @@
+title: "Lab Gallery"
+slides:
+  - image: "/assets/image/event/Fabio_visit.jpg"
+    alt: "Fabio visit seminar"
+    caption: "Research seminar given by Fabio, Jan 2026."
+
+  - image: "/assets/image/event/AAAI_alan.jpg"
+    alt: "AAAI poster presentation"
+    caption: "AAAI poster presentation given by Alan, Jan 2026."
+
+  - image: "/assets/image/event/Yusuf_visit.jpg"
+    alt: "Yusuf visit discussion"
+    caption: "Research discussion with Yusuf, Jan 2026."
+
+  - image: "/assets/image/event/team_building.jpg"
+    alt: "Team building event"
+    caption: "First team building event, Feb 2026."

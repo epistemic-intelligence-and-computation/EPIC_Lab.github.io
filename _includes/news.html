@@ -1,0 +1,23 @@
+<!-- _includes/news.html -->
+<div class="bio" id="news">
+  <h2 class="md-heading text-left">
+    <i aria-hidden="true" class="fa fa-tasks"></i>
+    News
+  </h2>
+
+  {% assign items = site.data.news.items | sort: "date_sort" | reverse %}
+    {% assign items = items | slice: 0, 3 %}
+  <ul>
+    {% for n in items %}
+      <li class="indented" data-date="[{{ n.date }}]">
+        {% if n.link_url and n.link_text %}
+          <a href="{{ n.link_url }}" target="_blank" rel="noopener">{{ n.link_text }}</a>
+          {% assign rest = n.text | replace: n.link_text, "" %}
+          {{ rest }}
+        {% else %}
+          {{ n.text }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

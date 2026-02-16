@@ -1,0 +1,67 @@
+/* assets/css/gallery.css */
+
+.carousel-container{
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.gallery-title{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.carousel{
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-images{
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide{
+  min-width: 100%;
+}
+
+.carousel-slide img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.caption{
+  text-align: center;
+  padding: 10px;
+  background: #f8f8f8;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.carousel-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.carousel-btn.prev{ left: 10px; }
+.carousel-btn.next{ right: 10px; }
+
+.carousel-counter{
+  text-align: center;
+  margin-top: 10px;
+  color: #777;
+  font-size: 0.9em;
+}

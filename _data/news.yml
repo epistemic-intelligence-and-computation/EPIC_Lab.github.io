@@ -1,0 +1,12 @@
+items:
+  - date: "Jan 2026"
+    date_sort: "2026-01-01"
+    text: "Prof. Fabio Cuzzolin (Oxford Brookes University, UK) visited our group and delivered a research seminar at NTU!"
+    link_text: "Prof. Fabio Cuzzolin (Oxford Brookes University, UK)"
+    link_url: "https://www.brookes.ac.uk/profiles/staff/fabio-cuzzolin"
+
+  - date: "Jan 2026"
+    date_sort: "2026-01-01"
+    text: "Yusuf Sale (LMU Munich, Germany) visited our group and had an inspiring research discussion with us!"
+    link_text: "Yusuf Sale (LMU Munich, Germany)"
+    link_url: "https://yusufsale.com/"

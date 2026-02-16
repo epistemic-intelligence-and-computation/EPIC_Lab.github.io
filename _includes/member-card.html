@@ -1,0 +1,42 @@
+<!-- _includes/member-card.html -->
+<div class="team-member">
+  <div class="member-photo">
+    <img
+      alt="{{ include.member.name | escape }}"
+      src="{{ include.member.photo | relative_url }}"
+    />
+  </div>
+
+  <h4>{{ include.member.name }}</h4>
+
+  <p class="member-role">
+    {{ include.member.role }}
+    {% if include.member.subtitle %}
+      <br />{{ include.member.subtitle }}
+    {% endif %}
+  </p>
+
+  {% if include.member.topics %}
+    <p class="member-research">Topics: {{ include.member.topics }}</p>
+  {% endif %}
+
+  <div class="member-links">
+    {% if include.member.email %}
+      <a class="small-link" href="mailto:{{ include.member.email }}">
+        <i class="fa fa-envelope"></i>
+      </a>
+    {% endif %}
+
+    {% if include.member.links.linkedin %}
+      <a class="small-link" href="{{ include.member.links.linkedin }}" target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    {% endif %}
+
+    {% if include.member.links.website %}
+      <a class="small-link" href="{{ include.member.links.website }}" target="_blank" rel="noopener">
+        <i class="fa fa-globe"></i>
+      </a>
+    {% endif %}
+  </div>
+</div>

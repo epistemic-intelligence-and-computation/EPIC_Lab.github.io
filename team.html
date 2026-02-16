@@ -1,230 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Team - EPIC Lab</title>
-  
-  <!-- 样式链接 -->
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+---
+layout: default
+title: Team - EPIC Lab
+permalink: /team.html
+---
 
-<body>
-  <!-- 导航栏 -->
-  <div id="navbar"></div>
-  <script>
-    fetch('nav.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-        document.querySelector('a[href="team.html"]').classList.add('active');
-      });
-  </script>
+<div class="wrapper">
+  <div class="team-section">
+    <h2 class="section-title">Current Members</h2>
 
-  <div class="wrapper">
-    <!-- <div class="page-header">
-      <h1 class="md-heading text-left">
-        <i class="fa fa-users" aria-hidden="true"></i>
-        Team
-      </h1> -->
-      <!-- <p class="page-subtitle">Meet the EPIC Lab members</p> -->
-    <!-- </div> -->
-
-    <!-- Team Lead -->
-    <!-- <div class="team-section"> -->
-      <!-- <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin: 40px 0 30px;">Team Lead</h2>
-      
-      <div class="pi-profile">
-        <div style="display: flex; flex-wrap: wrap; gap: 30px;">
-          <div class="pi-photo">
-            <img src="image/team/alan.jpeg" alt="Siu Lun Chau" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid #ecf0f1;">
-          </div>
-          <div class="pi-info" style="flex: 1; min-width: 300px;">
-            <h3 style="margin-top: 0;">Siu Lun Chau</h3>
-            <p style="color: #3498db; font-weight: bold; margin-bottom: 10px;">Assistant Professor @ NTU</p>
-            <div class="member-links">
-              <a href="mailto:siulun.chau@ntu.edu.sg" class="small-link"><i class="fa fa-envelope"></i></a>
-              <a href="https://www.linkedin.com/in/lan-zhou/" class="small-link"><i class="fa fa-linkedin"></i></a>
-              <a href="https://chau999.github.io/" class="small-link"><i class="fa fa-globe"></i></a>
-            </div> -->
-            <!-- <div class="pi-links" style="margin-top: 20px;">
-              <a href="https://chau999.github.io/" class="team-link"><i class="fa fa-globe"></i> Personal Website</a>
-              <a href="mailto:siulun.chau@ntu.edu.sg" class="team-link"><i class="fa fa-envelope"></i> Email</a>
-              <a href="https://scholar.google.com/citations?user=e7ZBlIsAAAAJ&hl=en" class="team-link"><i class="ai ai-google-scholar"></i> Google Scholar</a> -->
-            <!-- </div> -->
-          <!-- </div>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="team-section">
-      <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin: 40px 0 30px;">Current Members</h2>
-      
-      <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px;">
-          <div class="team-member">
-          <div class="member-photo">
-            <img src="image/team/alan.jpeg" alt="Siu Lun Chau" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
-          </div>
-          <h4>Siu Lun Chau</h4>
-          <p class="member-role">Assistant Professor @ NTU</p>
-          <p class="member-research">Topics: Uncertainty Quantification, Imprecise Probabilities, Cooperative Game Theory, Kernel Methods</p>
-          <div class="member-links">
-            <a href="mailto:siulun.chau@ntu.edu.sg" class="small-link"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/lan-zhou/" class="small-link"><i class="fa fa-linkedin"></i></a>
-            <a href="https://chau999.github.io/" class="small-link"><i class="fa fa-globe"></i></a>
-          </div>
-        </div>
-
-        <div class="team-member">
-          <div class="member-photo">
-            <img src="image/team/kaizheng.jpg" alt="Kaizheng Wang" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
-          </div>
-          <h4>Kaizheng Wang</h4>
-          <p class="member-role">Postdoctoral Research Fellow @ NTU</p>
-          <p class="member-research">Topics: Imprecise Probabilistic Machine Learning</p>
-          <div class="member-links">
-            <a href="mailto:kaizheng.wang@ntu.edu.sg" class="small-link"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/kaizheng-wang-a538661a9/" class="small-link"><i class="fa fa-linkedin"></i></a>
-            <a href="https://kaizheng-wang.github.io/" class="small-link"><i class="fa fa-globe"></i></a>
-          </div>
-        </div>
-
-        <div class="team-member">
-          <div class="member-photo">
-            <img src="image/team/clayton.jpeg" alt="Clayton Chong" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
-          </div>
-          <h4>Clayton Chong</h4>
-          <p class="member-role">PhD Student @ NTU</p>
-          <p class="member-research">Topics: Decision-making under Epistemic Uncertainty for Cooperative Games</p>
-          <div class="member-links">
-            <a href="mailto:chongclayton3@gmail.com" class="small-link"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/clayton-chong-7b9a5514b/" class="small-link"><i class="fa fa-linkedin"></i></a>
-          </div>
-        </div>
-        
-        <div class="team-member">
-          <div class="member-photo">
-            <img src="image/team/yuqi.png" alt="Yuqi Zhang" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
-          </div>
-          <h4>Yuqi Zhang</h4>
-          <p class="member-role">PhD Student @ HKU <br>
-            (main supervisor Prof. Edwin Fong @ HKU)</p>
-          <p class="member-research">Topics: Uncertainty-aware Causal Inference</p>
-          <div class="member-links">
-            <!-- <a href="#" class="small-link"><i class="fa fa-envelope"></i></a> -->
-            <a href="https://www.linkedin.com/in/yuqi-zhang-0b64bb1a6/" class="small-link"><i class="fa fa-linkedin"></i></a>
-          </div>
-        </div>
-        
-        <div class="team-member">
-          <div class="member-photo">
-            <img src="image/team/photo_.png" alt="Xiaotao Liu" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
-          </div>
-          <h4>Xiaotao Liu</h4>
-          <p class="member-role">Undergraduate Research Student @ NTU</p>
-          <p class="member-research">Topics: Decision-making under Epistemic Uncertainty</p>
-          <div class="member-links">
-            <a href="mailto:XLIU057@e.ntu.edu.sg" class="small-link"><i class="fa fa-envelope"></i></a>
-            <!-- <a href="https://www.linkedin.com/in/yuqi-zhang-0b64bb1a6/" class="small-link"><i class="fa fa-linkedin"></i></a> -->
-          </div>
-        </div>
-
-          <div class="team-member">
-          <div class="member-photo">
-            <img src="image/team/Joshua.jpeg" alt="Joshua Adrian Cahyono" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
-          </div>
-          <h4>Joshua Adrian Cahyono</h4>
-          <p class="member-role">Incoming PhD Student @ NTU</p>
-          <p class="member-research">Topics: Epistemic Intelligence</p>
-          <div class="member-links">
-            <a href="mailto:joshuaadrianc@gmail.com" class="small-link"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/joshua-ac/" class="small-link"><i class="fa fa-linkedin"></i></a>
-            <a href="https://jvthunder.org/#about" class="small-link"><i class="fa fa-globe"></i></a>
-          </div>
-        </div>
-
-      </div>
+    <div class="team-grid">
+      {% for m in site.data.members.current %}
+        {% include member-card.html member=m %}
+      {% endfor %}
     </div>
+  </div>
 
-    <!-- 校友部分
-    <div class="team-section">
-      <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin: 40px 0 30px;">Alumni</h2>
-      <div class="alumni-list">
-        <p><strong>Dr. Alex Johnson</strong> (PhD 2023) → Postdoc at Stanford University</p>
-        <p><strong>Dr. Maria Garcia</strong> (PhD 2022) → Research Scientist at Google Brain</p>
-      </div>
+  {% if site.data.members.alumni and site.data.members.alumni.size > 0 %}
+  <div class="team-section">
+    <h2 class="section-title">Alumni</h2>
+
+    <div class="team-grid">
+      {% for m in site.data.members.alumni %}
+        {% include member-card.html member=m %}
+      {% endfor %}
     </div>
-  </div> -->
-
-  <!-- 页脚 -->
-  <div id="footer"></div>
-  <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer').innerHTML = data;
-      });
-  </script>
-
-  <style>
-    .team-member {
-      text-align: center;
-      padding: 20px;
-      background: #f8f9fa;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-    }
-    
-    .team-member:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    
-    .member-role {
-      color: #7f8c8d;
-      font-size: 0.9em;
-      margin: 5px 0;
-    }
-    
-    .member-research {
-      color: #34495e;
-      font-size: 0.9em;
-      margin: 10px 0;
-    }
-    
-    .member-links {
-      margin-top: 10px;
-    }
-    
-    .small-link {
-      display: inline-block;
-      margin: 0 5px;
-      color: #3498db;
-      font-size: 1.2em;
-    }
-    
-    .team-link {
-      display: inline-block;
-      margin-right: 15px;
-      padding: 8px 15px;
-      background: #ecf0f1;
-      color: #2c3e50;
-      text-decoration: none;
-      border-radius: 4px;
-      margin-top: 5px;
-    }
-    
-    .team-link:hover {
-      background: #3498db;
-      color: white;
-    }
-    
-    .alumni-list p {
-      padding: 8px 0;
-      border-bottom: 1px dashed #ddd;
-    }
-  </style>
-</body>
-</html>
+  </div>
+  {% endif %}
+</div>

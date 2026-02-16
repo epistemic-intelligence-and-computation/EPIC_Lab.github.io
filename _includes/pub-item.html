@@ -1,0 +1,48 @@
+<!-- _includes/pub-item.html -->
+
+{% assign global_hi = site.pub_default_highlight_authors | default: empty %}
+{% assign local_hi  = include.pub.highlight_authors | default: empty %}
+{% assign hi = global_hi | concat: local_hi | uniq %}
+
+<div class="publication-item-compact">
+  <h3 class="publication-title">{{ include.pub.title }}</h3>
+  {% if include.pub.authors %}
+    <p class="publication-authors">
+      {% include authors.html authors=include.pub.authors highlight=include.pub.highlight_authors %}
+    </p>
+  {% endif %}
+
+  <p class="publication-venue">
+    {{ include.pub.venue }}
+    {% if include.pub.badges %}
+      {% for b in include.pub.badges %}
+        <span class="pub-badge {{ b.class }}">{{ b.text }}</span>
+      {% endfor %}
+    {% endif %}
+  </p>
+
+  {% if include.pub.links %}
+  <div class="publication-links-compact">
+    {% if include.pub.links.pdf %}
+      <a class="pub-link" href="{{ include.pub.links.pdf }}" target="_blank" rel="noopener">
+        <i class="fa fa-file-pdf-o"></i> PDF
+      </a>
+    {% endif %}
+    {% if include.pub.links.code %}
+      <a class="pub-link" href="{{ include.pub.links.code }}" target="_blank" rel="noopener">
+        <i class="fa fa-code"></i> Code
+      </a>
+    {% endif %}
+    {% if include.pub.links.video %}
+      <a class="pub-link" href="{{ include.pub.links.video }}" target="_blank" rel="noopener">
+        <i class="fa fa-video-camera"></i> Video
+      </a>
+    {% endif %}
+    {% if include.pub.links.project %}
+      <a class="pub-link" href="{{ include.pub.links.project }}" target="_blank" rel="noopener">
+        <i class="fa fa-link"></i> Project
+      </a>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>

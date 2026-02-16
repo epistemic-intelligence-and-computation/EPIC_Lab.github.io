@@ -1,0 +1,30 @@
+title: EPIC Lab
+description: Epistemic Intelligence & Computation (EPIC) Lab, NTU Singapore
+url: "" # set to https://<username>.github.io or custom domain if needed
+baseurl: "" # keep empty for root
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+theme: minima
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# _config.yml
+pub_default_highlight_authors:
+  - "Siu Lun Chau"
+  - "Kaizheng Wang"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .idea
+  - .git
+  - __MACOSX
+  - .DS_Store

@@ -1,0 +1,54 @@
+# _data/members.yml
+
+current:
+  - name: "Siu Lun Chau"
+    role: "Faculty"
+    topics:
+    photo: "/assets/image/team/alan.jpeg"
+    email: "siulun.chau@ntu.edu.sg"
+    links:
+      linkedin: "https://www.linkedin.com/in/lan-zhou/"
+      website: "https://chau999.github.io/"
+
+  - name: "Kaizheng Wang"
+    role: "Postdoctoral Research Fellow"
+#    topics: "Imprecise Probabilistic Machine Learning"
+    photo: "/assets/image/team/kaizheng.jpg"
+    email: "kaizheng.wang@ntu.edu.sg"
+    links:
+      linkedin: "https://www.linkedin.com/in/kaizheng-wang-a538661a9/"
+      website: "https://kaizheng-wang.github.io/"
+
+  - name: "Clayton Chong"
+    role: "PhD Student"
+#    topics: "Decision-making under Epistemic Uncertainty for Cooperative Games"
+    photo: "/assets/image/team/clayton.jpeg"
+    email: "chongclayton3@gmail.com"
+    links:
+      linkedin: "https://www.linkedin.com/in/clayton-chong-7b9a5514b/"
+
+  - name: "Yuqi Zhang"
+    role: "PhD Student"
+    subtitle: "(main supervisor Prof. Edwin Fong @ HKU)"
+#    topics: "Uncertainty-aware Causal Inference"
+    photo: "/assets/image/team/yuqi.png"
+    links:
+      linkedin: "https://www.linkedin.com/in/yuqi-zhang-0b64bb1a6/"
+
+  - name: "Xiaotao Liu"
+    role: "Undergraduate Research Student"
+#    topics: "Decision-making under Epistemic Uncertainty"
+    photo: "/assets/image/team/photo_.png"
+    email: "XLIU057@e.ntu.edu.sg"
+
+  - name: "Joshua Adrian Cahyono"
+    role: "Incoming PhD Student"
+#    topics: "Epistemic Intelligence"
+    photo: "/assets/image/team/Joshua.jpeg"
+    email: "joshuaadrianc@gmail.com"
+    links:
+      linkedin: "https://www.linkedin.com/in/joshua-ac/"
+      website: "https://jvthunder.org/#about"
+
+# Optional section for later
+alumni: []

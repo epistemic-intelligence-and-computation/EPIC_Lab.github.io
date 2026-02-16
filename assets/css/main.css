@@ -1,0 +1,246 @@
+/* ==========================================================
+   EPIC Lab — Unified CSS (Header Preserved)
+   Clean typography • Correct spacing • No conflicts
+   ========================================================== */
+
+/* -----------------------
+   1) Global Reset
+----------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------------------
+   2) Variables
+----------------------- */
+:root {
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --border: rgba(0, 0, 0, 0.12);
+    --link: #0a66c2;
+
+    --wrap: 760px;
+    --pad: 22px;
+
+    /* Header colors (FROM YOUR custom.css vibe) */
+    --header-bg: #000021;
+    --header-border: #002147;
+}
+
+/* -----------------------
+   3) Base Typography
+----------------------- */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #fff;
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+p { margin-bottom: 16px; }
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.5rem; margin-top: 26px; }
+h3 { font-size: 1.15rem; margin-top: 20px; }
+
+/* -----------------------
+   4) Layout
+----------------------- */
+.wrapper {
+    max-width: var(--wrap);
+    margin: 0 auto;
+    padding: 0 var(--pad);
+}
+
+.page-content {
+    padding: 34px 0;
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+}
+
+/* -----------------------
+   5) Links
+----------------------- */
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* -----------------------
+   6) Lists (FIXED)
+----------------------- */
+ul, ol {
+    margin: 10px 0 18px 22px;
+}
+
+li {
+    margin: 6px 0;
+    font-size: 1em;
+}
+
+/* -----------------------
+   7) HEADER (YOUR NICE ONE)
+----------------------- */
+.site-header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--header-border);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Align header content */
+.site-header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Title */
+.site-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+/* Nav */
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .trigger {
+    display: flex;
+    gap: 18px;
+}
+
+.site-nav .page-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.site-nav .page-link:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+
+    .site-nav .trigger {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 56px;
+        right: 16px;
+        background: white;
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .site-nav.active .trigger {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+
+    .site-nav .page-link {
+        color: #333;
+    }
+}
+
+/* -----------------------
+   8) Footer
+----------------------- */
+.site-footer {
+    border-top: 1px solid var(--border);
+    padding: 26px 0;
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* -----------------------
+   9) Cards
+----------------------- */
+.card-container {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.github-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    background: white;
+    width: 100%;
+    max-width: 360px;
+    font-size: 14px;
+}
+
+.github-card .description {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* -----------------------
+   10) Blockquotes
+----------------------- */
+blockquote {
+    border-left: 3px solid var(--border);
+    padding-left: 14px;
+    color: var(--muted);
+    margin: 14px 0;
+}
+
+/* -----------------------
+   Utilities
+----------------------- */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.hidden { display: none; }

@@ -1,0 +1,133 @@
+items:
+
+  # --------------------
+  # 2026
+  # --------------------
+
+  - year: 2026
+    title: "Learning Credal Ensembles via Distributionally Robust Optimization"
+    authors:
+      - "Kaizheng Wang"
+      - "Ghifari Adam Faza"
+      - "Fabio Cuzzolin"
+      - "Siu Lun Chau"
+      - "David Moens"
+      - "Hans Hallez"
+    highlight_authors:
+      - "Kaizheng Wang"
+      - "Siu Lun Chau"
+    venue: "ArXiv 2026"
+    links:
+      pdf: "https://arxiv.org/abs/2602.08470"
+
+  - year: 2026
+    title: "Quantifying Epistemic Predictive Uncertainty in Conformal Prediction"
+    authors:
+      - "Siu Lun Chau"
+      - "Soroush H. Zargarbashi"
+      - "Yusuf Sale"
+      - "Michele Caprio"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue: "ArXiv 2026"
+    links:
+      pdf: "https://arxiv.org/abs/2602.01667"
+
+  - year: 2026
+    title: "Explanation Design in Strategic Learning: Sufficient Explanations that Induce Non-harmful Responses"
+    authors:
+      - "Kiet Q.H. Vo"
+      - "Siu Lun Chau"
+      - "Masahiro Kato"
+      - "Yixin Wang"
+      - "Krikamol Muandet"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue: "Annual Conference on Artificial Intelligence and Statistics (AISTATS) 2026"
+    links:
+      pdf: "https://arxiv.org/pdf/2502.04058"
+      code: "https://github.com/muandet-lab/sl-leaf"
+
+  - year: 2026
+    title: "Exact Shapley Attributions in Quadratic-time for FANOVA Gaussian Processes"
+    authors:
+      - "Majid Mohammadi"
+      - "Krikamol Muandet"
+      - "Ilaria Tiddi"
+      - "Annette Ten Teije"
+      - "Siu Lun Chau"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue: "Annual AAAI Conference on Artificial Intelligence (AAAI) 2026"
+    links:
+      pdf: "https://arxiv.org/pdf/2508.14499v1"
+
+  # --------------------
+  # 2025
+  # --------------------
+
+  - year: 2025
+    title: "When Do Credal Sets Stablize? Fixed Point Theorems for Credal Set Updates"
+    authors:
+      - "Michele Caprio"
+      - "Siu Lun Chau"
+      - "Krikamol Muandet"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue: "ArXiv 2025"
+    links:
+      pdf: "https://arxiv.org/pdf/2510.04769"
+
+  - year: 2025
+    title: "Integral Imprecise Probability Metrics"
+    authors:
+      - "Siu Lun Chau"
+      - "Michele Caprio"
+      - "Krikamol Muandet"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue: "Annual Conference on Neural Information Processing Systems (NeurIPS) 2025"
+    links:
+      pdf: "https://arxiv.org/pdf/2505.16156"
+
+  - year: 2025
+    title: "Computing Exact Shapley Values in Polynomial Time for Product-Kernel Methods"
+    authors:
+      - "Majid Mohammadi"
+      - "Siu Lun Chau"
+      - "Krikamol Muandet"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue: "ArXiv 2025"
+    links:
+      pdf: "https://arxiv.org/pdf/2505.16516"
+      code: "https://github.com/muandet-lab/Imprecise-Scoring-Rule"
+
+  - year: 2025
+    title: "Truthful Elicitation of Imprecise Forecast"
+    authors:
+      - "Anurag Singh"
+      - "Siu Lun Chau"
+      - "Krikamol Muandet"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue: "Conference on Uncertainty in Artificial Intelligence (UAI) 2025"
+    badges:
+      - text: "Oral"
+        class: "badge-oral"
+    links:
+      pdf: "http://arxiv.org/pdf/2503.16395"
+      code: "https://github.com/muandet-lab/Imprecise-Scoring-Rule"
+
+  - year: 2025
+    title: "Kernel Quantile Embedding and Associated Probability Metircs"
+    authors:
+      - "Masha Naslidnyk"
+      - "Siu Lun Chau"
+      - "Francois-Xavier Briol"
+      - "Krikamol Muandet"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue: "International Conference on Machine Learning (ICML) 2025"
+    links:
+      pdf: "https://openreview.net/forum?id=9LqXn0Izwk"

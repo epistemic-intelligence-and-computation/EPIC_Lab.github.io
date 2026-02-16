@@ -1,0 +1,29 @@
+<!-- _includes/gallery.html -->
+{% assign slides = site.data.gallery.slides | default: empty %}
+
+<div class="carousel-container">
+  <h3 class="gallery-title">{{ site.data.gallery.title | default: "Lab Gallery" }}</h3>
+
+  <div class="carousel" data-carousel>
+    <div class="carousel-images" data-carousel-images>
+      {% for s in slides %}
+        <div class="carousel-slide">
+          <img
+            alt="{{ s.alt | escape }}"
+            src="{{ s.image | relative_url }}"
+          />
+          {% if s.caption %}
+            <div class="caption">{{ s.caption }}</div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <button class="carousel-btn prev" data-carousel-prev aria-label="Previous slide">❮</button>
+    <button class="carousel-btn next" data-carousel-next aria-label="Next slide">❯</button>
+
+    <div class="carousel-counter">
+      <span data-carousel-current>1</span> / <span data-carousel-total>{{ slides.size }}</span>
+    </div>
+  </div>
+</div>
