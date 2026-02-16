@@ -10,3 +10,9 @@ items:
     text: "Yusuf Sale (LMU Munich, Germany) visited our group and had an inspiring research discussion with us!"
     link_text: "Yusuf Sale (LMU Munich, Germany)"
     link_url: "https://yusufsale.com/"
+
+  - date: "Dec 2025"
+    date_sort: "2025-12-09"
+    text: "EPIC Lab coorganised the First workshop of Epistemic Intelligence in Machine Learning at EurIPS 2025!"
+    link_test: "First workshop of Epistemic Intelligence in Machine Learning"
+    link_url: "https://sites.google.com/view/eiml-eurips2025/home"
