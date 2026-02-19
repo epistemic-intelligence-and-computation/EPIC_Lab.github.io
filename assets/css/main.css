@@ -47,7 +47,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-p { margin-bottom: 16px; }
+p {
+    margin-bottom: 16px;
+}
 
 h1, h2, h3, h4 {
     font-weight: 600;
@@ -55,9 +57,19 @@ h1, h2, h3, h4 {
     margin-bottom: 12px;
 }
 
-h1 { font-size: 2.2rem; }
-h2 { font-size: 1.5rem; margin-top: 26px; }
-h3 { font-size: 1.15rem; margin-top: 20px; }
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 26px;
+}
+
+h3 {
+    font-size: 1.15rem;
+    margin-top: 20px;
+}
 
 /* -----------------------
    4) Layout
@@ -68,7 +80,9 @@ h3 { font-size: 1.15rem; margin-top: 20px; }
     padding: 0 var(--pad);
 }
 
-.page-content { padding: 34px 0; }
+.page-content {
+    padding: 34px 0;
+}
 
 @media (max-width: 800px) {
     .wrapper {
@@ -85,13 +99,20 @@ a {
     text-decoration: none;
 }
 
-a:hover { text-decoration: underline; }
+a:hover {
+    text-decoration: underline;
+}
 
 /* -----------------------
    6) Lists
 ----------------------- */
-ul, ol { margin: 10px 0 18px 22px; }
-li { margin: 6px 0; }
+ul, ol {
+    margin: 10px 0 18px 22px;
+}
+
+li {
+    margin: 6px 0;
+}
 
 /* -----------------------
    7) Header / Navigation
@@ -171,7 +192,9 @@ li { margin: 6px 0; }
         display: block;
     }
 
-    .site-nav { position: relative; }
+    .site-nav {
+        position: relative;
+    }
 
     .site-nav .trigger {
         display: none;
@@ -247,7 +270,28 @@ blockquote {
 /* -----------------------
    Utilities
 ----------------------- */
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.hidden { display: none; }
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu-icon svg path {
+    fill: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+    .menu-icon svg path {
+        fill: #ffffff;
+    }
+}
