@@ -157,7 +157,11 @@ li {
 }
 
 .menu-icon {
-    display: none;
+  display: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  line-height: 0;
 }
 
 /* Mobile menu */

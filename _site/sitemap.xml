@@ -12,4 +12,7 @@
 <url>
 <loc>http://localhost:4000/vacancy.html</loc>
 </url>
+<url>
+<loc>http://localhost:4000/testing/</loc>
+</url>
 </urlset>
