@@ -164,6 +164,12 @@ li {
     transition: background-color 0.2s ease;
 }
 
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .site-nav .page-link:hover {
     background-color: rgba(255, 255, 255, 0.12);
     color: white;
@@ -178,51 +184,54 @@ li {
 }
 
 @media (max-width: 768px) {
-  .menu-icon {
-    display: inline-flex;   /* ✅ show on mobile */
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+    .menu-icon {
+        display: inline-flex; /* ✅ show on mobile */
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
 
-      /* force visible placement */
-    position: relative;
-    z-index: 10000;
-    margin-left: auto;
+        /* force visible placement */
+        position: relative;
+        z-index: 10000;
+        margin-left: auto;
 
-  }
+    }
 
-  .menu-icon svg {
-    width: 26px;
-    height: 26px;
-    display: block;
-  }
+    .menu-icon svg {
+        width: 26px;
+        height: 26px;
+        display: block;
+    }
 
-  .site-nav { position: relative; } /* helps absolute dropdown anchor correctly */
+    .site-nav {
+        position: relative;
+    }
 
-  .site-nav .trigger {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 56px;
-    right: 0px;
-    background: white;
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    z-index: 9999;
+    /* helps absolute dropdown anchor correctly */
+    .site-nav .trigger {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 56px;
+        right: 0px;
+        background: white;
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        z-index: 9999;
 
-  }
+    }
 
-  .site-nav .trigger a.page-link {
-    color: #333 !important;
-    text-decoration: none;
-    padding: 8px 10px;
-    display: block;
-  }
+    .site-nav .trigger a.page-link {
+        color: #333 !important;
+        text-decoration: none;
+        padding: 8px 10px;
+        display: block;
+    }
 
-  .site-nav.active .trigger {
-    display: flex;
-  }
+    .site-nav.active .trigger {
+        display: flex;
+    }
 }
 
 /* -----------------------
@@ -291,5 +300,7 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-  .menu-icon { display: inline-flex !important; }
+    .menu-icon {
+        display: inline-flex !important;
+    }
 }
