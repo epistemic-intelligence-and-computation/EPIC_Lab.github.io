@@ -184,7 +184,7 @@ li {
     }
 
     .menu-icon {
-        display: block;
+        display: none;
         cursor: pointer;
         color: white;
     }
