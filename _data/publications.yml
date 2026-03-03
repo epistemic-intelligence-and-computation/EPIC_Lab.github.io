@@ -4,6 +4,22 @@ items:
   # 2026
   # --------------------
   - year: 2026
+    title: "Instrumental and Proximal Causal Inference with Gaussian Processes"
+    authors:
+      - "Yuqi Zhang"
+      - "Krikamol Muandet"
+      - "Dino Sejdinovic"
+      - "Edwin Fong"
+      - "Siu Lun Chau"
+    highlight_authors:
+      - "Yuqi Zhang"
+      - "Siu Lun Chau"
+    venue:
+      - "Arxiv 2026"
+    links:
+      pdf: https://arxiv.org/abs/2603.02159
+
+  - year: 2026
     title: "Set-based v.s. Distribution-based Representations of Epistemic Uncertainty: A Comparative Study"
     authors:
       - "Kaizheng Wang"
