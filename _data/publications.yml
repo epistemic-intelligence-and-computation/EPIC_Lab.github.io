@@ -4,6 +4,21 @@ items:
   # 2026
   # --------------------
   - year: 2026
+    title: "Incentive Aware AI Regulations: A Credal Characterisation"
+    authors:
+      - "Anurag Singh"
+      - "Julian Rodemann"
+      - "Rajeev Verma"
+      - "Siu Lun Chau"
+      - "Krikamol Muandet"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue:
+      - "Arxiv 2026"
+    links:
+      pdf: http://arxiv.org/abs/2603.05175
+
+  - year: 2026
     title: "Instrumental and Proximal Causal Inference with Gaussian Processes"
     authors:
       - "Yuqi Zhang"
