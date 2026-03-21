@@ -1,4 +1,10 @@
 items:
+  - date: "Feb 2026"
+    data_sort: "2026-03-21"
+    text: "EPIC Lab is coorganising the 2nd Epistemic Intelligence in Machine Learning Workshop at ICML2026, check out the website for further information."
+    link_text: "website"
+    link_url: "https://sites.google.com/view/eimlicml2026/home"
+
   - date: "Jan 2026"
     date_sort: "2026-01-01"
     text: "Prof. Fabio Cuzzolin (Oxford Brookes University, UK) visited our group and delivered a research seminar at NTU!"
