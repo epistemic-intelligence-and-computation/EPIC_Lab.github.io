@@ -12,15 +12,18 @@
 
     <!-- Local styles -->
     <link rel="stylesheet" href="/assets/css/gallery.css">
-    <script src="/assets/js/gallery-carousel.js" defer></script>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/stylesheet.css">
-<!--    <link rel="stylesheet" href="/assets/css/custom.css">-->
+    <!-- <link rel="stylesheet" href="/assets/css/custom.css"> -->
     <link rel="stylesheet" href="/assets/css/team.css">
-        <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Scripts -->
+    <script src="/assets/js/gallery-carousel.js" defer></script>
+    <script src="/assets/js/nav.js" defer></script>
 
     
 </head>
@@ -28,21 +31,31 @@
 <!-- nav.html -->
 <header class="site-header">
   <div class="wrapper">
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
+    <nav class="site-nav" aria-label="Main navigation">
 
-      <div class="trigger">
+      <!-- Hamburger (mobile) -->
+      <button
+        type="button"
+        class="menu-icon"
+        aria-label="Toggle navigation"
+        aria-controls="site-nav-menu"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 18 15" aria-hidden="true" focusable="false">
+          <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </button>
+
+      <!-- Menu links -->
+      <div class="trigger" id="site-nav-menu">
         <a class="page-link" href="/index.html"><b>Home</b></a>
         <a class="page-link" href="/team.html"><b>Team</b></a>
         <a class="page-link" href="/publications.html"><b>Publications</b></a>
         <a class="page-link" href="/vacancy.html"><b>Vacancy</b></a>
       </div>
+
     </nav>
   </div>
 </header>
@@ -165,7 +178,82 @@
 
 
 <div class="publication-item-compact">
-  <h3 class="publication-title">Learning Credal Ensembles via Distributionally Robust Optimization</h3>
+  <h3 class="publication-title">Robust Predictive Uncertainty and Double Descent in Contaminated Bayesian Random Features</h3>
+  
+    <p class="publication-authors">
+      <!-- _includes/authors.html -->
+
+
+
+
+  
+  
+
+  
+    Michele Caprio
+  
+
+  , 
+
+  
+  
+
+  
+    Katerina Papagiannouli
+  
+
+  , 
+
+  
+  
+
+  
+    <ins>Siu Lun Chau</ins>
+  
+
+  , 
+
+  
+  
+
+  
+    Sayan Mukherjee
+  
+
+  
+
+    </p>
+  
+
+  <p class="publication-venue">
+    Arxiv 2026
+    
+  </p>
+
+  
+  <div class="publication-links-compact">
+    
+      <a class="pub-link" href="https://arxiv.org/pdf/2602.19126" target="_blank" rel="noopener">
+        <i class="fa fa-file-pdf-o"></i> PDF
+      </a>
+    
+    
+    
+    
+  </div>
+  
+</div>
+          
+        
+          
+            <!-- _includes/pub-item.html -->
+
+
+
+
+
+<div class="publication-item-compact">
+  <h3 class="publication-title">Set-based v.s. Distribution-based Representations of Epistemic Uncertainty: A Comparative Study</h3>
   
     <p class="publication-authors">
       <!-- _includes/authors.html -->
@@ -186,7 +274,7 @@
   
 
   
-    Ghifari Adam Faza
+    Yunjia Wang
   
 
   , 
@@ -196,15 +284,6 @@
 
   
     Fabio Cuzzolin
-  
-
-  , 
-
-  
-  
-
-  
-    <ins>Siu Lun Chau</ins>
   
 
   , 
@@ -225,20 +304,29 @@
     Hans Hallez
   
 
+  , 
+
+  
+  
+
+  
+    <ins>Siu Lun Chau</ins>
+  
+
   
 
     </p>
   
 
   <p class="publication-venue">
-    ArXiv 2026
+    Arxiv 2026
     
   </p>
 
   
   <div class="publication-links-compact">
     
-      <a class="pub-link" href="https://arxiv.org/abs/2602.08470" target="_blank" rel="noopener">
+      <a class="pub-link" href="http://arxiv.org/abs/2602.22747" target="_blank" rel="noopener">
         <i class="fa fa-file-pdf-o"></i> PDF
       </a>
     
@@ -258,7 +346,7 @@
 
 
 <div class="publication-item-compact">
-  <h3 class="publication-title">Exact Shapley Attributions in Quadratic-time for FANOVA Gaussian Processes</h3>
+  <h3 class="publication-title">Instrumental and Proximal Causal Inference with Gaussian Processes</h3>
   
     <p class="publication-authors">
       <!-- _includes/authors.html -->
@@ -270,7 +358,7 @@
   
 
   
-    Majid Mohammadi
+    <ins>Yuqi Zhang</ins>
   
 
   , 
@@ -288,7 +376,7 @@
   
 
   
-    Ilaria Tiddi
+    Dino Sejdinovic
   
 
   , 
@@ -297,7 +385,7 @@
   
 
   
-    Annette Ten Teije
+    Edwin Fong
   
 
   , 
@@ -315,17 +403,105 @@
   
 
   <p class="publication-venue">
-    Annual AAAI Conference on Artificial Intelligence (AAAI) 2026
+    Arxiv 2026
     
   </p>
 
   
   <div class="publication-links-compact">
     
-      <a class="pub-link" href="https://arxiv.org/pdf/2508.14499v1" target="_blank" rel="noopener">
+      <a class="pub-link" href="https://arxiv.org/abs/2603.02159" target="_blank" rel="noopener">
         <i class="fa fa-file-pdf-o"></i> PDF
       </a>
     
+    
+    
+    
+  </div>
+  
+</div>
+          
+        
+          
+            <!-- _includes/pub-item.html -->
+
+
+
+
+
+<div class="publication-item-compact">
+  <h3 class="publication-title">Incentive Aware AI Regulations: A Credal Characterisation</h3>
+  
+    <p class="publication-authors">
+      <!-- _includes/authors.html -->
+
+
+
+
+  
+  
+
+  
+    Anurag Singh
+  
+
+  , 
+
+  
+  
+
+  
+    Julian Rodemann
+  
+
+  , 
+
+  
+  
+
+  
+    Rajeev Verma
+  
+
+  , 
+
+  
+  
+
+  
+    <ins>Siu Lun Chau</ins>
+  
+
+  , 
+
+  
+  
+
+  
+    Krikamol Muandet
+  
+
+  
+
+    </p>
+  
+
+  <p class="publication-venue">
+    Arxiv 2026
+    
+  </p>
+
+  
+  <div class="publication-links-compact">
+    
+      <a class="pub-link" href="http://arxiv.org/abs/2603.05175" target="_blank" rel="noopener">
+        <i class="fa fa-file-pdf-o"></i> PDF
+      </a>
+    
+    
+      <a class="pub-link" href="https://github.com/muandet-lab/incentive-aware-ai-regulation" target="_blank" rel="noopener">
+        <i class="fa fa-code"></i> Code
+      </a>
     
     
     
@@ -430,6 +606,178 @@
 
 
 <div class="publication-item-compact">
+  <h3 class="publication-title">Exact Shapley Attributions in Quadratic-time for FANOVA Gaussian Processes</h3>
+  
+    <p class="publication-authors">
+      <!-- _includes/authors.html -->
+
+
+
+
+  
+  
+
+  
+    Majid Mohammadi
+  
+
+  , 
+
+  
+  
+
+  
+    Krikamol Muandet
+  
+
+  , 
+
+  
+  
+
+  
+    Ilaria Tiddi
+  
+
+  , 
+
+  
+  
+
+  
+    Annette Ten Teije
+  
+
+  , 
+
+  
+  
+
+  
+    <ins>Siu Lun Chau</ins>
+  
+
+  
+
+    </p>
+  
+
+  <p class="publication-venue">
+    Annual AAAI Conference on Artificial Intelligence (AAAI) 2026
+    
+  </p>
+
+  
+  <div class="publication-links-compact">
+    
+      <a class="pub-link" href="https://arxiv.org/pdf/2508.14499v1" target="_blank" rel="noopener">
+        <i class="fa fa-file-pdf-o"></i> PDF
+      </a>
+    
+    
+      <a class="pub-link" href="https://github.com/Majeed7/orthogonal-additive-gaussian-processes-main" target="_blank" rel="noopener">
+        <i class="fa fa-code"></i> Code
+      </a>
+    
+    
+    
+  </div>
+  
+</div>
+          
+        
+          
+            <!-- _includes/pub-item.html -->
+
+
+
+
+
+<div class="publication-item-compact">
+  <h3 class="publication-title">Verbalizing LLM’s Higher-order Uncertainty via Imprecise Probabilities</h3>
+  
+    <p class="publication-authors">
+      <!-- _includes/authors.html -->
+
+
+
+
+  
+  
+
+  
+    Anita Yang
+  
+
+  , 
+
+  
+  
+
+  
+    Krikamol Muandet
+  
+
+  , 
+
+  
+  
+
+  
+    Michele Caprio
+  
+
+  , 
+
+  
+  
+
+  
+    <ins>Siu Lun Chau</ins>
+  
+
+  , 
+
+  
+  
+
+  
+    Masaki Adachi
+  
+
+  
+
+    </p>
+  
+
+  <p class="publication-venue">
+    Arxiv 2026
+    
+  </p>
+
+  
+  <div class="publication-links-compact">
+    
+      <a class="pub-link" href="https://arxiv.org/abs/2603.10396" target="_blank" rel="noopener">
+        <i class="fa fa-file-pdf-o"></i> PDF
+      </a>
+    
+    
+    
+    
+  </div>
+  
+</div>
+          
+        
+          
+            <!-- _includes/pub-item.html -->
+
+
+
+
+
+<div class="publication-item-compact">
   <h3 class="publication-title">Quantifying Epistemic Predictive Uncertainty in Conformal Prediction</h3>
   
     <p class="publication-authors">
@@ -498,6 +846,99 @@
           
         
           
+            <!-- _includes/pub-item.html -->
+
+
+
+
+
+<div class="publication-item-compact">
+  <h3 class="publication-title">Learning Credal Ensembles via Distributionally Robust Optimization</h3>
+  
+    <p class="publication-authors">
+      <!-- _includes/authors.html -->
+
+
+
+
+  
+  
+
+  
+    <ins>Kaizheng Wang</ins>
+  
+
+  , 
+
+  
+  
+
+  
+    Ghifari Adam Faza
+  
+
+  , 
+
+  
+  
+
+  
+    Fabio Cuzzolin
+  
+
+  , 
+
+  
+  
+
+  
+    <ins>Siu Lun Chau</ins>
+  
+
+  , 
+
+  
+  
+
+  
+    David Moens
+  
+
+  , 
+
+  
+  
+
+  
+    Hans Hallez
+  
+
+  
+
+    </p>
+  
+
+  <p class="publication-venue">
+    ArXiv 2026
+    
+  </p>
+
+  
+  <div class="publication-links-compact">
+    
+      <a class="pub-link" href="https://arxiv.org/abs/2602.08470" target="_blank" rel="noopener">
+        <i class="fa fa-file-pdf-o"></i> PDF
+      </a>
+    
+    
+    
+    
+  </div>
+  
+</div>
+          
+        
+          
         
           
         
@@ -519,6 +960,95 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <!-- _includes/pub-item.html -->
+
+
+
+
+
+<div class="publication-item-compact">
+  <h3 class="publication-title">Kernel Quantile Embedding and Associated Probability Metircs</h3>
+  
+    <p class="publication-authors">
+      <!-- _includes/authors.html -->
+
+
+
+
+  
+  
+
+  
+    Masha Naslidnyk
+  
+
+  , 
+
+  
+  
+
+  
+    <ins>Siu Lun Chau</ins>
+  
+
+  , 
+
+  
+  
+
+  
+    Francois-Xavier Briol
+  
+
+  , 
+
+  
+  
+
+  
+    Krikamol Muandet
+  
+
+  
+
+    </p>
+  
+
+  <p class="publication-venue">
+    International Conference on Machine Learning (ICML) 2025
+    
+  </p>
+
+  
+  <div class="publication-links-compact">
+    
+      <a class="pub-link" href="https://openreview.net/forum?id=9LqXn0Izwk" target="_blank" rel="noopener">
+        <i class="fa fa-file-pdf-o"></i> PDF
+      </a>
+    
+    
+      <a class="pub-link" href="https://github.com/MashaNaslidnyk/kqe" target="_blank" rel="noopener">
+        <i class="fa fa-code"></i> Code
+      </a>
+    
+    
+    
+  </div>
+  
+</div>
           
         
           
@@ -797,81 +1327,6 @@
 </div>
           
         
-          
-            <!-- _includes/pub-item.html -->
-
-
-
-
-
-<div class="publication-item-compact">
-  <h3 class="publication-title">Kernel Quantile Embedding and Associated Probability Metircs</h3>
-  
-    <p class="publication-authors">
-      <!-- _includes/authors.html -->
-
-
-
-
-  
-  
-
-  
-    Masha Naslidnyk
-  
-
-  , 
-
-  
-  
-
-  
-    <ins>Siu Lun Chau</ins>
-  
-
-  , 
-
-  
-  
-
-  
-    Francois-Xavier Briol
-  
-
-  , 
-
-  
-  
-
-  
-    Krikamol Muandet
-  
-
-  
-
-    </p>
-  
-
-  <p class="publication-venue">
-    International Conference on Machine Learning (ICML) 2025
-    
-  </p>
-
-  
-  <div class="publication-links-compact">
-    
-      <a class="pub-link" href="https://openreview.net/forum?id=9LqXn0Izwk" target="_blank" rel="noopener">
-        <i class="fa fa-file-pdf-o"></i> PDF
-      </a>
-    
-    
-    
-    
-  </div>
-  
-</div>
-          
-        
       </div>
     
 
@@ -893,7 +1348,7 @@
     </div>
     <div style="text-align: center; margin-top: 1px; padding-top: 1px; border-top: 0.5px solid #ddd; max-width: 600px; margin-left: auto; margin-right: auto;">
       <p style="font-size: 0.7em; color: #777; line-height: 1.1; margin: 0; padding: 0;">
-        © 2025 EPIC Lab, NTU. All rights reserved.
+        © 2026 EPIC Lab. All rights reserved.
       </p>
     </div>
   </div>

@@ -1,6 +1,6 @@
 /* ==========================================================
-   EPIC Lab — Unified CSS (Header Preserved)
-   Clean typography • Correct spacing • No conflicts
+   EPIC Lab — Unified CSS (Stable + Mobile-Safe)
+   Clean typography • Correct spacing • Predictable nav
    ========================================================== */
 
 /* -----------------------
@@ -26,7 +26,6 @@
     --wrap: 760px;
     --pad: 22px;
 
-    /* Header colors (FROM YOUR custom.css vibe) */
     --header-bg: #000021;
     --header-border: #002147;
 }
@@ -40,7 +39,7 @@ html, body {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                 Roboto, "Helvetica Neue", Arial, sans-serif;
+    Roboto, "Helvetica Neue", Arial, sans-serif;
     background: #fff;
     color: var(--text);
     font-size: 13px;
@@ -48,7 +47,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-p { margin-bottom: 16px; }
+p {
+    margin-bottom: 16px;
+}
 
 h1, h2, h3, h4 {
     font-weight: 600;
@@ -56,9 +57,19 @@ h1, h2, h3, h4 {
     margin-bottom: 12px;
 }
 
-h1 { font-size: 2.2rem; }
-h2 { font-size: 1.5rem; margin-top: 26px; }
-h3 { font-size: 1.15rem; margin-top: 20px; }
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 26px;
+}
+
+h3 {
+    font-size: 1.15rem;
+    margin-top: 20px;
+}
 
 /* -----------------------
    4) Layout
@@ -93,7 +104,7 @@ a:hover {
 }
 
 /* -----------------------
-   6) Lists (FIXED)
+   6) Lists
 ----------------------- */
 ul, ol {
     margin: 10px 0 18px 22px;
@@ -101,11 +112,10 @@ ul, ol {
 
 li {
     margin: 6px 0;
-    font-size: 1em;
 }
 
 /* -----------------------
-   7) HEADER (YOUR NICE ONE)
+   7) Header / Navigation
 ----------------------- */
 .site-header {
     background-color: var(--header-bg);
@@ -116,14 +126,12 @@ li {
     z-index: 1000;
 }
 
-/* Align header content */
 .site-header .wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-end;
 }
 
-/* Title */
 .site-title {
     font-size: 20px;
     font-weight: 600;
@@ -131,10 +139,10 @@ li {
     text-decoration: none;
 }
 
-/* Nav */
 .site-nav {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .site-nav .trigger {
@@ -144,7 +152,6 @@ li {
 
 .site-nav .page-link {
     color: rgba(255, 255, 255, 0.85);
-    text-decoration: none;
     font-weight: 500;
     padding: 4px 8px;
     border-radius: 6px;
@@ -156,42 +163,66 @@ li {
     color: white;
 }
 
+/* Hamburger button */
 .menu-icon {
     display: none;
+    background: none;
+    border: 0;
+    padding: 6px;
+    line-height: 0;
+    cursor: pointer;
 }
 
-/* Mobile menu */
+/* -----------------------
+   8) Mobile Navigation
+----------------------- */
 @media (max-width: 768px) {
+
+    .menu-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        z-index: 10000;
+    }
+
+    .menu-icon svg {
+        width: 26px;
+        height: 26px;
+        display: block;
+    }
+
+    .site-nav {
+        position: relative;
+    }
 
     .site-nav .trigger {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 56px;
-        right: 16px;
+        top: calc(100% + 8px);
+        right: 0;
         background: white;
         padding: 12px;
         border-radius: 8px;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        z-index: 9999;
+        min-width: 180px;
     }
 
     .site-nav.active .trigger {
         display: flex;
     }
 
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        color: white;
-    }
-
-    .site-nav .page-link {
+    .site-nav .trigger a.page-link {
         color: #333;
+        padding: 8px 10px;
+        display: block;
     }
 }
 
 /* -----------------------
-   8) Footer
+   9) Footer
 ----------------------- */
 .site-footer {
     border-top: 1px solid var(--border);
@@ -202,7 +233,7 @@ li {
 }
 
 /* -----------------------
-   9) Cards
+   10) Cards
 ----------------------- */
 .card-container {
     display: flex;
@@ -227,7 +258,7 @@ li {
 }
 
 /* -----------------------
-   10) Blockquotes
+   11) Blockquotes
 ----------------------- */
 blockquote {
     border-left: 3px solid var(--border);
@@ -239,8 +270,28 @@ blockquote {
 /* -----------------------
    Utilities
 ----------------------- */
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
+.text-center {
+    text-align: center;
+}
 
-.hidden { display: none; }
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu-icon svg path {
+    fill: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+    .menu-icon svg path {
+        fill: #ffffff;
+    }
+}
