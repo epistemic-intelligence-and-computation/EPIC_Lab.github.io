@@ -12,15 +12,18 @@
 
     <!-- Local styles -->
     <link rel="stylesheet" href="/assets/css/gallery.css">
-    <script src="/assets/js/gallery-carousel.js" defer></script>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/stylesheet.css">
-<!--    <link rel="stylesheet" href="/assets/css/custom.css">-->
+    <!-- <link rel="stylesheet" href="/assets/css/custom.css"> -->
     <link rel="stylesheet" href="/assets/css/team.css">
-        <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Scripts -->
+    <script src="/assets/js/gallery-carousel.js" defer></script>
+    <script src="/assets/js/nav.js" defer></script>
 
     
 </head>
@@ -28,21 +31,31 @@
 <!-- nav.html -->
 <header class="site-header">
   <div class="wrapper">
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
+    <nav class="site-nav" aria-label="Main navigation">
 
-      <div class="trigger">
+      <!-- Hamburger (mobile) -->
+      <button
+        type="button"
+        class="menu-icon"
+        aria-label="Toggle navigation"
+        aria-controls="site-nav-menu"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 18 15" aria-hidden="true" focusable="false">
+          <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </button>
+
+      <!-- Menu links -->
+      <div class="trigger" id="site-nav-menu">
         <a class="page-link" href="/index.html"><b>Home</b></a>
         <a class="page-link" href="/team.html"><b>Team</b></a>
         <a class="page-link" href="/publications.html"><b>Publications</b></a>
         <a class="page-link" href="/vacancy.html"><b>Vacancy</b></a>
       </div>
+
     </nav>
   </div>
 </header>
@@ -75,17 +88,38 @@
         color: black;
     }
 
+    /* --- Logos (mobile-safe) --- */
     .logo-row {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 24px; /* space between logos */
+        flex-wrap: wrap; /* ✅ allow wrapping on small screens */
+        row-gap: 14px; /* ✅ nicer spacing when wrapped */
     }
 
     .logo-row img {
-        height: 60px; /* set a consistent logo height */
+        height: 80px; /* desktop logo height */
         width: auto;
         display: block;
+        max-width: 100%; /* ✅ never overflow container */
+        object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+        .logo-row {
+            gap: 14px;
+        }
+
+        .logo-row img {
+            height: 42px; /* ✅ smaller on mobile */
+        }
+    }
+
+    @media (max-width: 380px) {
+        .logo-row img {
+            height: 36px; /* ✅ very small phones */
+        }
     }
 </style>
 
@@ -128,27 +162,40 @@
             <ul>
                 <li>
                     <markorange><strong>Mathematical Foundations of Epistemic Uncertainty:</strong></markorange>
-                    We study the mathematical and statistical
-                    principles governing knowledge-level uncertainty, including representation (e.g. distributions v.s.
-                    sets), quantification (e.g. information-theoretic v.s. discrepency-based), comparisons (e.g.
-                    probability metrics), verification (e.g. statistical tests) of epistemic uncertainty.
+                    We investigate the mathematical and statistical structures underlying
+                    knowledge-level uncertainty. Our work examines formal representation frameworks (e.g., single
+                    probability measures, sets of distributions, and higher-order models), principled quantification
+                    strategies (e.g., information-theoretic and discrepancy-based characterisations),
+                    methods for comparison and geometry (e.g., probability metrics and statistical distances), and
+                    procedures for empirical verification (e.g., statistical testing and model
+                    criticism). This research draws on tools from probability theory, imprecise probability, Bayesian
+                    statistics, information theory, statistical inference and testing, and cooperative game theory.
                 </li>
                 <li>
                     <markblue><strong>Algorithms for Epistemic Uncertainty-Aware Learning:</strong></markblue>
-                    We develope machine learning algorithms that
-                    can reason about, propagate, and communicate epistemic uncertainty in prediction (e.g. Gaussian
-                    process, neural networks, conformal framework), inference (e.g. causal inference), and
-                    decision-making (e.g. active learning, Bayesian optimisation).
+                    We design and analyse machine learning algorithms that explicitly model, propagate, and exploit
+                    epistemic uncertainty across the learning pipeline. Our work focuses on uncertainty-aware predictive
+                    modelling (e.g., Gaussian processes, Bayesian neural networks, credal predictors, and conformal
+                    prediction methods),
+                    structured inference under incomplete or ambiguous information (e.g., causal, counterfactual, and
+                    strategic
+                    learning), and decision-making under uncertainty (e.g., active learning and Bayesian optimisation).
+                    Emphasis is placed on statistical validity, robustness to distributional
+                    shift, computational efficiency, and principled uncertainty communication, enabling learning systems
+                    to support reliable reasoning and decision processes in open-world settings.
 
                 </li>
                 <li>
                     <markgreen><strong>Epistemic Uncertainty-Aware AI Systems, Frameworks, and Applications:</strong>
                     </markgreen>
-                    We translate our theoretical
-                    and algorithmic developments into practical AI systems within the broader trustworthy AI landscape,
-                    addressing challenges such as interpretability and explainability, out-of-domain detections,
-                    incentive-aware and
-                    adverserial machine learning,AI safety, robustness, and language models.
+                    We operationalise our theoretical and algorithmic advances by developing uncertainty-aware AI
+                    systems and methodological frameworks for real-world deployment. Our work investigates how
+                    epistemic uncertainty can be leveraged to improve reliability, safety, and robustness in complex
+                    learning environments, with applications spanning interpretable and explainable models,
+                    out-of-distribution detection, robustness under distributional shift, incentive-aware and
+                    adversarial learning, AI safety, and foundation / language models. A central objective is the design
+                    of systems that can recognise the limits of their knowledge, adapt to novel conditions, and
+                    communicate uncertainty in a manner conducive to human oversight and decision-making.
                 </li>
             </ul>
         </div>
@@ -208,6 +255,12 @@
     
   <ul>
     
+      <li class="indented" data-date="[Feb 2026]">
+        
+          EPIC Lab is coorganising the <a href="https://sites.google.com/view/eimlicml2026/home"> 2nd Epistemic Intelligence in Machine Learning Workshop </a> at ICML2026, check out the website for further information.
+        
+      </li>
+    
       <li class="indented" data-date="[Jan 2026]">
         
           <a href="https://yusufsale.com/" target="_blank" rel="noopener">Yusuf Sale (LMU Munich, Germany)</a>
@@ -221,12 +274,6 @@
           <a href="https://www.brookes.ac.uk/profiles/staff/fabio-cuzzolin" target="_blank" rel="noopener">Prof. Fabio Cuzzolin (Oxford Brookes University, UK)</a>
           
            visited our group and delivered a research seminar at NTU!
-        
-      </li>
-    
-      <li class="indented" data-date="[Dec 2025]">
-        
-          EPIC Lab coorganised the First workshop of Epistemic Intelligence in Machine Learning at EurIPS 2025!
         
       </li>
     
@@ -302,7 +349,6 @@
   </div>
 </div>
 </div>
-
 </main>
 
 <!-- footer.html-->
@@ -319,7 +365,7 @@
     </div>
     <div style="text-align: center; margin-top: 1px; padding-top: 1px; border-top: 0.5px solid #ddd; max-width: 600px; margin-left: auto; margin-right: auto;">
       <p style="font-size: 0.7em; color: #777; line-height: 1.1; margin: 0; padding: 0;">
-        © 2025 EPIC Lab, NTU. All rights reserved.
+        © 2026 EPIC Lab. All rights reserved.
       </p>
     </div>
   </div>
