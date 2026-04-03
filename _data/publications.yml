@@ -4,6 +4,25 @@ items:
   # 2026
   # --------------------
   - year: 2026
+    title: "Quantification of Credal Quantification of Credal Uncertainty: A Distance-based Approach"
+    authors:
+      - "Xabier Gonzalez-Garcia"
+      - "Siu Lun Chau"
+      - "Julian Rodemann"
+      - "Michele Caprio"
+      - "Krikamol Muandet"
+      - "Humberto Bustince"
+      - "Sébastien Destercke"
+      - "Eyke Hüllermeier"
+      - "Yusuf Sale"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue:
+      - "Arxiv 2026"
+    links:
+      pdf: https://arxiv.org/pdf/2603.27270
+
+  - year: 2026
     title: "Verbalizing LLM’s Higher-order Uncertainty via Imprecise Probabilities"
     authors:
       - "Anita Yang"
