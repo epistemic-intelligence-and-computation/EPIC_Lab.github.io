@@ -1,5 +1,11 @@
 items:
 
+  - date: "Apr 2026"
+    date_sort: "2026-04-08"
+    text: Congraulation to our postdoc Dr. Kaizheng Wang winning the 2026 BNVKI AI PhD Dissertation Award!
+    link_text:
+    link_url: ""
+
   - date: "Feb 2026"
     date_sort: "2026-03-01"
     text: EPIC Lab is coorganising the <a href="https://sites.google.com/view/eimlicml2026/home"> 2nd Epistemic Intelligence in Machine Learning Workshop </a> at ICML2026, check out the website for further information.

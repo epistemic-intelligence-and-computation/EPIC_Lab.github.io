@@ -6,7 +6,7 @@
   </h2>
 
   {% assign items = site.data.news.items | sort: "date_sort" | reverse %}
-    {% assign items = items | slice: 0, 3 %}
+    {% assign items = items | slice: 0, 5 %}
   <ul>
     {% for n in items %}
       <li class="indented" data-date="[{{ n.date }}]">
