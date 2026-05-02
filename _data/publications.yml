@@ -112,7 +112,10 @@ items:
     highlight_authors:
       - "Kaizheng Wang"
       - "Siu Lun Chau"
-    venue: "ArXiv 2026"
+    venue: "International Conference on Machine Learning (ICML) 2026"
+    badges:
+      - text: "Spotlight"
+        class: "badge-spotlight"
     links:
       pdf: "https://arxiv.org/abs/2602.08470"
 
