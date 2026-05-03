@@ -12,6 +12,15 @@
     </p>
   {% endif %}
 
+  <!-- <p class="publication-venue">
+    {{ include.pub.venue }}
+    {% if include.pub.badges %}
+      {% for b in include.pub.badges %}
+        <span class="pub-badge {{ b.class }}">{{ b.text }}</span>
+      {% endfor %}
+    {% endif %}
+  </p> -->
+
   <p class="publication-venue">
     {{ include.pub.venue }}
     {% if include.pub.badges %}
