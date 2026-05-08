@@ -8,32 +8,41 @@
   <h3 class="publication-title">{{ include.pub.title }}</h3>
   {% if include.pub.authors %}
     <p class="publication-authors">
-      {% include authors.html authors=include.pub.authors highlight=include.pub.highlight_authors %}
+      {% for author in include.pub.authors %}
+        {% assign is_highlight = false %}
+        {% for h in hi %}
+          {% if h == author %}{% assign is_highlight = true %}{% endif %}
+        {% endfor %}
+        {% assign is_equal = false %}
+        {% for e in include.pub.equal_contribution %}
+          {% if e == author %}{% assign is_equal = true %}{% endif %}
+        {% endfor %}
+        {% if is_highlight %}
+          <span class="highlight-author">{{ author }}{% if is_equal %}*{% endif %}</span>
+        {% else %}
+          {{ author }}{% if is_equal %}*{% endif %}
+        {% endif %}
+        {% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+      {% if include.pub.equal_contribution %}
+        (* equal contribution)
+      {% endif %}
     </p>
   {% endif %}
 
-  <!-- <p class="publication-venue">
+  <p class="publication-venue">
     {{ include.pub.venue }}
     {% if include.pub.badges %}
       {% for b in include.pub.badges %}
-        <span class="pub-badge {{ b.class }}">{{ b.text }}</span>
+        <span class="pub-badge {{ b.class }}"
+          {% if b.class == "badge-spotlight" or b.class == "badge-oral" %}
+            style="color: red;"
+          {% endif %}>
+          {{ b.text }}
+        </span>
       {% endfor %}
     {% endif %}
-  </p> -->
-
-<p class="publication-venue">
-  {{ include.pub.venue }}
-  {% if include.pub.badges %}
-    {% for b in include.pub.badges %}
-      <span class="pub-badge {{ b.class }}"
-        {% if b.class == "badge-spotlight" or b.class == "badge-oral" %}
-          style="color: red;"
-        {% endif %}>
-        {{ b.text }}
-      </span>
-    {% endfor %}
-  {% endif %}
-</p>
+  </p>
 
   {% if include.pub.links %}
   <div class="publication-links-compact">

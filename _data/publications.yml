@@ -4,6 +4,37 @@ items:
   # 2026
   # --------------------
   - year: 2026
+    title: "Amortized Linear-time Exact Shapley Value for Product-Kernel Methods"
+    authors:
+      - "Majid Mohammadi"
+      - "Siu Lun Chau"
+      - "Krikamol Muandet"
+    highlight_authors:
+      - "Siu Lun Chau"
+    equal_contribution:
+      - "Majid Mohammadi"
+      - "Siu Lun Chau"
+    venue:
+      - "Arxiv 2026"
+    links:
+      pdf: https://arxiv.org/pdf/2505.16516
+
+  - year: 2026
+    title: "QuadraSHAP: Stable and Scalable Shapley Values for Product Games via Gauss–Legendre Quadrature"
+    authors:
+      - "Majid Mohammadi"
+      - "Grigory Reznikov"
+      - "Pavel Sinitcyn"
+      - "Krikamol Muandet"
+      - "Siu Lun Chau"
+    highlight_authors:
+      - "Siu Lun Chau"
+    venue:
+      - "Arxiv 2026"
+    links:
+      pdf: https://arxiv.org/pdf/2605.05870
+
+  - year: 2026
     title: "Measuring Differences between Conditional Distributions using Kernel Embeddings"
     authors:
       - "Peter Moskvichev"
@@ -217,18 +248,18 @@ items:
     links:
       pdf: "https://arxiv.org/pdf/2505.16156"
 
-  - year: 2025
-    title: "Computing Exact Shapley Values in Polynomial Time for Product-Kernel Methods"
-    authors:
-      - "Majid Mohammadi"
-      - "Siu Lun Chau"
-      - "Krikamol Muandet"
-    highlight_authors:
-      - "Siu Lun Chau"
-    venue: "ArXiv 2025"
-    links:
-      pdf: "https://arxiv.org/pdf/2505.16516"
-      code: "https://github.com/muandet-lab/Imprecise-Scoring-Rule"
+  # - year: 2025
+  #   title: "Computing Exact Shapley Values in Polynomial Time for Product-Kernel Methods"
+  #   authors:
+  #     - "Majid Mohammadi"
+  #     - "Siu Lun Chau"
+  #     - "Krikamol Muandet"
+  #   highlight_authors:
+  #     - "Siu Lun Chau"
+  #   venue: "ArXiv 2025"
+  #   links:
+  #     pdf: "https://arxiv.org/pdf/2505.16516"
+  #     code: "https://github.com/muandet-lab/Imprecise-Scoring-Rule"
 
   - year: 2025
     title: "Truthful Elicitation of Imprecise Forecast"
