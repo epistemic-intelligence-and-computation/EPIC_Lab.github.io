@@ -18,7 +18,7 @@
           {% if e == author %}{% assign is_equal = true %}{% endif %}
         {% endfor %}
         {% if is_highlight %}
-          <span class="highlight-author">{{ author }}{% if is_equal %}*{% endif %}</span>
+          <ins>{{ author }}{% if is_equal %}*{% endif %}</ins>
         {% else %}
           {{ author }}{% if is_equal %}*{% endif %}
         {% endif %}
