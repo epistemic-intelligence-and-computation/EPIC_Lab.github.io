@@ -1,6 +1,10 @@
 title: "Lab Gallery"
 slides:
   - image: "/assets/image/event/Fabio_visit.jpg"
+    alt: "Team building event"
+    caption: "Group hiking at MacRitchie Reservoir, May 2026."
+
+  - image: "/assets/image/event/Fabio_visit.jpg"
     alt: "Fabio visit seminar"
     caption: "Research seminar given by Fabio, Jan 2026."
 
