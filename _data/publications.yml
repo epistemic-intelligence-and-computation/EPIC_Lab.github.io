@@ -176,6 +176,7 @@ items:
         class: "badge-spotlight"
     links:
       pdf: "https://arxiv.org/abs/2602.08470"
+      code: "https://github.com/Kaizheng-WANG/Learning-Credal-Ensembles-via-Distributionally-Robust-Optimization"
 
   - year: 2026
     title: "Quantifying Epistemic Predictive Uncertainty in Conformal Prediction"
