@@ -1,4 +1,10 @@
 items:
+  - date: "June 2026"
+    date_sort: "2026-06-02"
+    text: Five of our papers have been accepted at UAI 2026!
+    link_text:
+    link_url: ""
+
   - date: "Apr 2026"
     date_sort: "2026-04-30"
     text: Two of our papers have been accepted at ICML 2026, including one Spotlight!
